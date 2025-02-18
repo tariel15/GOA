@@ -1,0 +1,12 @@
+print(5+5)
+print(9+10)
+print(18/2)
+print(7-2)
+num1=5+5
+num2=9+10
+num3=18/2
+num4=7-2
+print(num1)
+print(num2)
+print(num3)
+print(num4)
