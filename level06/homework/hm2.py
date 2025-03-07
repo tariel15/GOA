@@ -5,5 +5,9 @@
 მოცემული რიცხვი, საბოლოოდ დაბეჭდეთ სამივე ცვლადი"""
 
 celsius=-5
-ferenhight=23
-kelvin=-273,15
+ferenhight=celsius*(9/5)+32
+kelvin=-celsius+273.15
+
+print(celsius)
+print(ferenhight)
+print(kelvin)
