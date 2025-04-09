@@ -1,4 +1,4 @@
-corect_pin="tariel"
+corect_pin="2009"
 user_pin=""
 attempts=0
 while user_pin != corect_pin:
@@ -7,4 +7,4 @@ while user_pin != corect_pin:
     if user_pin != corect_pin:
         print("wrong pin")
         if user_pin == corect_pin:
-            print("ავტორიზაცია წარმატებით გაიარა")
+            print("ავტორიზაცია წარმატებით გაიარე {attempts}")
