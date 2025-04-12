@@ -2,6 +2,4 @@
 enter_name=input("enter your name")
 name=("tarie")
 if name ==enter_name:
-    print("welcom")
-else:
-    print("what a coincidence")
+    print("coincidence")
