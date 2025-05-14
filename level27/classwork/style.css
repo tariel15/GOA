@@ -1,0 +1,15 @@
+header{
+    color: blue;
+    background-color: black;
+    text-align: right;
+}
+button{
+    color: red;
+    background-color: blue;
+    text-align: left;
+}
+p{
+    color: aqua;
+    background-color: blue;
+    text-align: center;
+}
