@@ -1,0 +1,14 @@
+h1{
+    color: red;
+    background-color: black;
+    text-align: center;
+    border: 1px;
+    border-color: red;
+}
+p{
+    color: blue;
+    background-color: crimson;
+    text-align: center;
+    border: 1px;
+    border-color: darkblue;
+}

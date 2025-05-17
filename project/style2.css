@@ -1,0 +1,14 @@
+nav,nav{
+    color: red;
+    background-color: black;
+    text-align: center;
+    border: 1px;
+    border-color: darkblue;
+}
+form{
+    color: black;
+    background-color: red;
+    text-align:center;
+    border: 1px;
+    border-color: aqua;
+}

@@ -1,0 +1,14 @@
+h1{
+    color: black;
+    background-color: rgb(219, 44, 44);
+    text-align: left;
+    border: 1px;
+    border-color: brown;
+}
+p{
+    color: gold;
+    background-color: black;
+    text-align: right;
+    border: 1px;
+    border-color: darkred;
+}
