@@ -1,0 +1,31 @@
+<!--4) თქვენის სიტყვებით ახსენით და კომენტარებით დაწერეთ CSS specificity (ბრაუზერის ალგორითმი რომელიც პრიორიტეტების მიხედვით ანიჭებს ელემენტებს სტილს) მოიყვანეთ 4-ივე შემთხვევის მაგალითი-->
+<!--id ის საშუალებით ჩვენ შეგვიძლია ელემენტები ინდივიდუალურად გავსტილოთ-->
+<!--inline უპირატესობას ანიჭებს უფრო inline css-->
+<!--class ის საშუალებით ჩვენ შეგვიძლია სხვადასხვა ელემენტი ერთნაირად გავსტილოთ-->
+<!--element ჩვენ შეგვიძლია ყველა გარკვეულ თეგს მივანიჭოთ სთაილი-->
+<html>
+    <head>
+        <style>
+            .section1{
+                color: black;
+                background-color: red;
+            }
+            #section2d{
+                color: chocolate;
+                background-color: darkturquoise;
+            }
+            h1{
+                color: darkblue;
+                background-color: beige;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p class="section1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est eligendi officia nisi magnam, adipisci quibusdam molestias quod illo quia officiis, ad pariatur sed. Veritatis, magni! Atque illo debitis nulla aut?</p>
+        <h1 class="section1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aut exercitationem incidunt et minima nobis ad est praesentium quam harum nulla nesciunt quibusdam, enim beatae cum ex. Voluptatem, sunt quod.</h1>
+        <h1 id="section2d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel laboriosam consequuntur maxime nisi necessitatibus placeat, ducimus iste perferendis voluptate, quod molestias, quia praesentium unde dolore aspernatur omnis a voluptatum nostrum!</h1>
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui numquam quia labore eveniet atque temporibus fugit et. Rerum nemo at culpa, expedita minus aliquid, debitis, totam rem possimus hic vitae?</h1>
+
+    </body>
+</html>
