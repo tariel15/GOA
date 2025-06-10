@@ -1,0 +1,8 @@
+p{
+    text-align: center; /*text-align_ის გამოყენებით ჩვენ შეგვიძლია ტექსტს მივუწეროთ სად გადაიტანოს მაგალითად: შუაში*/
+    text-decoration: line-through; /*text-decoration_ის საშუალებით ჩვენ შეგვიძლია ხაზს მივცეტ დეკორაცია*/
+    text-decoration-style: dashed; /*text-decoration-style_ის საშუალებით ჩვენ შეგვიძლია გავსტილოთ თუ როგორი ხაზი გაუსვას ტექსტს*/
+    text-decoration-color: red; /*text-decoration-color_ის საშუალებით ჩვენ შეგვიძლია ფერი მივცეთ ტექსტის ქვეშ გასმულ ხაზს*/
+    text-transform: capitalize; /*text-transform ეს მართავს ტექსტის ასოებს*/
+    text-shadow: 1px; /*text-shadow ეს არის ჩრდილი და ამის საშუალებით ჩვენ შეგვიძლია დავწეროთ რამხელა ჩრდილი უნდა ჰქონდეს*/
+}
