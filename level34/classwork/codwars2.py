@@ -1,7 +1,8 @@
-#https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/python
-# Even or Odd
-def even_or_odd(number):
-    if number %2==0:
-        return "Even"
-    else:
-        return "Odd"
+#https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/python
+def get_count(sentence):
+    Vowel="aeiou"
+    Vowel_count=0
+    for char in sentence:
+        if char in Vowel:
+            Vowel_count +=1
+    return Vowel_count
