@@ -1,0 +1,8 @@
+a:hover{  /*hover როცა მაუსს გადავატარებთ მაშინ მიიღებს სტილს*/
+    color: green;
+    text-decoration: solid;
+}
+a:active{   /*active როდესაც ვაჭერთ ბმულს მაშინ მიიღებს სტილს*/
+    color: rebeccapurple;
+    text-decoration: double;
+}

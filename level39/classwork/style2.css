@@ -1,0 +1,14 @@
+.class1{
+    border: 4px color #ff0000;
+    
+}
+.class1 th, .class1 td{
+    border: 2px color #0000ff;
+}
+
+.class2{
+    border: 5px color #008000;
+}
+.class2 th, .class2 td{
+    border: 3px color #808080;
+}
