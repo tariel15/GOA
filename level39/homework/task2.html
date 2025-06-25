@@ -1,8 +1,94 @@
+<!--3) შექმენით ლინკების სია რომელშიც თითო ლინკი გადაჰყავს სხვადასხვა საიტზე (მაგ: sololearn, wikipedia, w3schools). თითოეულ ლინკს შეუცვალეთ ფერი და კიდევ ორი სტილი (მაგ: background-color, text-decoration) ოთხივე მდგომარეობაში: :link, :visited, :hover, :active. გამოიყენეთ კლასები და კომენტარებით დაუწერეთ რა მდგომარეობას წარმოადგენს თითოეული pseudo-class-->
 <html>
     <head>
+        <style>
+            .class1{
+                color: #008000;
+                background-color: #0000ff;
+                text-decoration: double;
 
+            }
+            .class1 :link{
+                color:#ff0000 ;
+                background-color:#000000 ;
+                text-decoration: double;
+            }
+            .class1 :visited{
+                color:#000000 ;
+                background-color:#ff0000 ;
+                text-decoration: none;
+            }
+            .class1 :hover{
+                color:#808080 ;
+                background-color:#000000 ;
+                text-decoration:dotted ;
+            }
+            .class1 :active{
+                color:#ffd700 ;
+                background-color: #000000;
+                text-decoration:solid ;
+            }
+            .class2{
+                color:#ff0000 ;
+                background-color: rgb(210, 105, 30);
+                text-decoration: none ;
+            }
+            .class2 :link{
+            color:#adff2f ;
+                background-color:#ffebcd ;
+                text-decoration:double ;
+            }
+            .class2 :visited{
+                color:#008000 ;
+                background-color:#000000;
+                text-decoration:dotted ;
+            }
+            .class2 :hover{
+                color: #ff0000;
+                background-color:#008000 ;
+                text-decoration: none;
+            }
+            .class2 :active{
+                color:#ffff00 ;
+                background-color:#000000 ;
+                text-decoration: double;
+            }
+            .class3{
+                color:#8b0000 ;
+                background-color:#808080 ;
+                text-decoration: none;
+            }
+            .class3 :link{
+                color:#daa520 ;
+                background-color:#f8f8ff ;
+                text-decoration:underline ;
+            }
+            .class3 :visited{
+                color: #228b22;
+                background-color:#b22222 ;
+                text-decoration: transparent;
+            }
+            .class3 :hover{
+                color:#ff00ff ;
+                background-color:#4169e1 ;
+                text-decoration:line-through ;
+            }
+            .class3 :active{
+                color:#9acd32 ;
+                background-color:#4b0082;
+                text-decoration:unset ;
+            }
+        </style>
     </head>
     <body>
-        
+        <nav class="1">
+            <a href="https://www.sololearn.com/">sololearn</a>
+        </nav>
+        <nav class="2">
+            <a href="https://www.wikipedia.org/">wikipedia</a>
+        </nav>
+        <nav class="3">
+            <a href="https://www.w3schools.com/">w3schools</a>
+        </nav>
     </body>
 </html>

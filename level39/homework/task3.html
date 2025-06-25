@@ -1,8 +1,81 @@
+<!--4) შექმენით ცხრილი რომელშიც იქნება სტუდენტების სია, თითოეულს ექნება სახელი, საგანი და ქულა. ცხრილის მეორე სვეტს (საგანს) ცალკე სტილი მიანიჭეთ td:nth-child(2) სელექტორით (მაგ: სხვა ფერი ან ფონური ფერი). მთლიან ცხრილზე და td/th-ებზე გამოიყენეთ border კუთვნილება, ხოლო ცხრილის ბოლოს დააკოპირეთ ის და მეორე ვერსიას მიუმატეთ border-collapse: collapse; კომენატარებში დაწერეთ რა განსხვავებაა ორი ცხრილის გარეგნობაში-->
 <html>
     <head>
-
+        <style>
+            .class1{
+                color:#ff0000;
+                border: 10px #000000;
+            }
+            .class1 th, .class1 td{
+                color: #0000ff;
+                border: 2px color #008000;
+            }
+            .class2{
+                color: #0000ff;
+                border:2px color #808080;
+            }
+            .class2 th ,.class2 td{
+                color: #808080;
+                border:2px color #008000;
+            }
+            td:nth-child(2){
+                border-collapse: collapse;
+            }
+        </style>
     </head>
     <body>
-        
+        <table class="class1">
+            <thead>
+                <tr>
+                    <td>student</td>
+                    <td>lessone</td>
+                    <td>gread</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tato</td>
+                    <td>english</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>nika</td>
+                    <td>math</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>nini</td>
+                    <td>biology</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <table class="class2">
+            <thead>
+                <tr>
+                    <td>student</td>
+                    <td>lessone</td>
+                    <td>gread</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tato</td>
+                    <td>english</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>nika</td>
+                    <td>math</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>nini</td>
+                    <td>biology</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>

@@ -1,8 +1,27 @@
+<!--2) შექმენით ნავიგაცია რომელშიც იქნება 3 ბმული, თითოეულს pseudo class-ის გამოყენებით შეუჩვალეთ hover და active მდოგმარეობებისას ტექსტის ფერი და დამატებით 2 კუთვნილება. კომენტარებით თუ რა არის pseudo class და მდგომარეობა (state)-->
 <html>
     <head>
-
+        <style>
+            .a:hover{
+                color: #000000;
+                text-decoration: double;
+                background-color: #00ffff;
+            }
+            .a:active{
+                color: #ff0000;
+                background-color: #000000;
+                text-decoration: line-through;
+            }
+        </style>
     </head>
     <body>
-        
+        <nav>
+            <a href="https://www.facebook.com/">facebook</a>
+            <a href="https://discord.com/">discord</a>
+            <a href="https://youtube.com/">youtube</a>
+        </nav>
     </body>
 </html>
+<!--psudo class აქვს ორი მდგომარეობა hover და active და psudo class_ს ვიყენებთ rgb ფერის მისაცემათ-->
+<!--active როდესაც ვაჭერთ ბმულს მაშინ მიიღებს სტილს-->
+<!--hover როცა მაუსს გადავატარებთ მაშინ მიიღებს სტილს-->
