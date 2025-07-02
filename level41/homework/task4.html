@@ -1,0 +1,63 @@
+<!--5) შექმენით უკუკავშირის ფორმა, სადაც იქნება 'სახელი', 'ელფოსტა', 'შეტყობინება' და 'გაგზავნის ღილაკი'. input[type=text] და textarea ელემენტებს მიანიჭეთ border-radius: 5px; border: 1px solid blue; text-transform: capitalize; გამოიყენეთ form ელემენტზე background-color: lightgray; გამოიყენეთ input[type=text]:hover რათა მაუსის გადატარებისას ფონი გახდეს ღია ლურჯი-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>უკუკავშირის ფორმა</title>
+<style>
+    form {
+    background-color: lightgray;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    }
+
+    input[type="text"],
+    textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    text-transform: capitalize;
+    }
+
+    input[type="text"]:hover {
+    background-color: lightblue;
+    }
+
+    textarea {
+    resize: vertical;
+    }
+
+    button {
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: darkblue;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <label>სახელი:</label>
+    <input type="text" name="name" placeholder="თქვენი სახელი">
+
+    <label>ელფოსტა:</label>
+    <input type="text" name="email" placeholder="თქვენი ელფოსტა">
+
+    <label>შეტყობინება:</label>
+    <textarea name="message" rows="4" placeholder="შეიყვანეთ შეტყობინება"></textarea>
+
+    <button type="submit">გაგზავნა</button>
+</form>
+
+</body>
+</html>
