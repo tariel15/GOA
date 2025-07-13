@@ -1,0 +1,19 @@
+#box1{
+    color: black;
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 10px;
+}
+#box2{
+    color: red;
+    background-color:gray ;
+    margin: 23px;
+    padding: 12px;
+}
+
+#box3{
+    color: cornsilk;
+    background-color: blue;
+    margin: 25px;
+    padding: 15px;
+}

@@ -1,0 +1,14 @@
+#box1{
+    width:30px ;
+    background-color:red ;
+    border: 2px solid blue; /*საზღვარი*/
+    padding: 15px; /*შიდა სივრცე*/
+    margin: 30px; /* გარეთ სივრცე */
+}
+#box2{
+    width:30px;
+    background-color:black;
+    border: 3px solid red;
+    padding: 10px;
+    margin: 20px;
+}
