@@ -1,0 +1,82 @@
+<!--5) შექმენით მსგავსი პროფილის გვერდი-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile Card</title>
+<style>
+    body {
+    background-color: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+
+    .card {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    width: 320px;
+    }
+
+    .profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    }
+
+    h2 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    }
+
+    .location {
+    \color: #b4ff48;
+    font-size: 14px;
+    margin-bottom: 15px;
+    }
+
+    .bio {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 25px;
+    }
+
+    .link-btn {
+    display: block;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    }
+
+    .link-btn:hover {
+    background-color: #555;
+    }
+</style>
+</head>
+<body>
+<div class="card">
+    <img src="https://i.pravatar.cc/80" alt="Profile" class="profile-img" />
+    <h2>Jessica Randall</h2>
+    <div class="location">London, United Kingdom</div>
+    <div class="bio">"Front-end developer and avid reader."</div>
+    
+    <a href="#" class="link-btn">GitHub</a>
+    <a href="#" class="link-btn">Frontend Mentor</a>
+    <a href="#" class="link-btn">LinkedIn</a>
+    <a href="#" class="link-btn">Twitter</a>
+    <a href="#" class="link-btn">Instagram</a>
+</div>
+</body>
+</html>

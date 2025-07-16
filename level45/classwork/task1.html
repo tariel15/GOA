@@ -1,0 +1,55 @@
+<!--1) შექმენით 1 container დივი, რომელშიც შექმნით 5 .box კლასის მქონე div-ს, შემდეგ ეს .box კალსის მქონე დივები განალაგეთ flexbox-ად. შემდეგ მათ შორის აიღეთ 30px დაშორება, flex-ის მიმართულება უნდა იყოს row, ელემენტები ჰოროზონტალურად განალგეთ flex-end-ზე, ხოლო ვერტიკალურად განალაგეთ ცენტრში, ასევე ისინი თუ ვერ დაეტევიან კონკრერტულ რიგში, გაუწერეთ flex-wrap რომ შეძლონ შემდეგ რიგებზე გადასვლა. ასევე თუ მოწყობლიობის ზომა მცირეა და ელემენტები ვერ ეტევიან რიგზე, მაშინ მათი ზომა შემცირდეს 1-ით, ხოლო თუ შესაძებლია რომ გაიზარდონ ყველა div-ი გარდა პირველისა გაიზრდოს 1-ის კოეფციენტით ხოლო პირველი გაიზარდოს 2-ით-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level 45 - Flexbox</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    }
+
+    .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 90%;
+    padding: 20px;
+    border: 2px dashed #999;
+    }
+
+    .box {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    min-width: 100px;
+    text-align: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    }
+
+    .box:first-child {
+    flex-grow: 2;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+</div>
+</body>
+</html>
