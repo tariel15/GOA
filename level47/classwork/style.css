@@ -1,0 +1,28 @@
+button{
+    color:green ;
+    background-color: red;
+    height: 100vh;
+    position: static;
+    z-index: 5;
+}
+.class1{
+color: red;
+background-color: gray;
+border: 2px solid green;
+top: 40px;
+z-index: 1;
+}
+.class2{
+color: blue;
+background-color: black;
+border: 3px solid pink;
+left: 50px;
+z-index: 3;
+}
+.class3{
+color: blanchedalmond;
+background-color: hotpink;
+border: 4px solid black;
+right: 30px;
+z-index: 2;
+}

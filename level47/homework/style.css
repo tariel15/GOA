@@ -1,0 +1,42 @@
+div{
+    z-index: 3;
+    position: static;
+    height: 200vh;
+    background-color: black;
+    color:blue ;
+}
+.class1{
+    color: aqua;
+    background-color: blue;
+    text-align: center;
+    z-index: 2;
+    position: static;
+}
+.class2{
+    color: gray;
+    background-color: red;
+    text-align: right;
+    z-index: 3;
+    position: sticky;
+}
+.class3{
+color: rgb(32, 32, 71);
+background-color: rebeccapurple;
+text-align: left;
+z-index: 2;
+position: fixed;
+}
+.class4{
+    color: greenyellow;
+    background-color: tomato;
+    text-align: justify;
+    z-index: 2;
+    position: relative;
+}
+.class5{
+    color: black;
+    background-color: yellow;
+    text-align: center;
+    z-index: 2;
+    position: static;
+}

@@ -1,0 +1,112 @@
+<!--4) შექმენით ვებგვერდი, სადაც გამოყენებული იქნება CSS პოზიციონირების ოთხივე ტიპი: static, relative, absolute და fixed. გვერდის ზედა ნაწილში განათავსეთ ფიქსირებული ჰედერი (fixed), რომელშიც ეწერება „ჩემი პროფილი“ და რომელიც დარჩება ეკრანზე გადახვევის დროს. ჰედერის ქვემოთ შექმენით პროფილის ბლოკი (relative), სადაც იქნება ფოტო, სახელი და აღწერა. ამ ბლოკის შიგნით ფოტოს მარჯვენა ზედა კუთხეში დაამატეთ მესიჯის ლოგო (absolute) შეტყობინებების რიცხვით (მაგალითად, 3). ბოლოს დაამატეთ ჩვეულებრივი ტექსტის აბზაცი (static), რომელიც გვერდზე დარჩება ჩვეულებრივ დოკუმენტის ნაკადში. თითოეულ ბლოკს გამოიყენეთ განსხვავებული ფერი და ზომები, რათა პოზიციონირების ეფექტები თვალსაჩინო იყოს-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>ჩემი პროფილი</title>
+<style>
+    body {
+    margin: 0;
+    font-family: sans-serif;
+    }
+
+    /* Fixed Header */
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 1000;
+    }
+
+    /* Add margin-top to push content below the fixed header */
+    .content {
+    margin-top: 70px;
+    padding: 20px;
+    }
+
+    /* Profile Block - Relative */
+    .profile {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    }
+
+    .profile img {
+    width: 100%;
+    border-radius: 10px;
+    }
+
+    /* Message Icon - Absolute */
+    .message-icon {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: bold;
+    }
+
+    .name {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    }
+
+    .description {
+    font-size: 16px;
+    color: #555;
+    }
+
+    /* Static Text Block */
+    .paragraph {
+    margin-top: 40px;
+    background-color: #e0f7fa;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+</style>
+</head>
+<body>
+    <!-- Fixed Header -->
+<div class="header">
+    ჩემი პროფილი
+</div>
+
+<!-- Page Content -->
+<div class="content">
+    
+    <!-- Relative Profile Block -->
+    <div class="profile">
+    <!-- Absolute Message Icon -->
+    <div class="message-icon">3</div>
+    <img src="https://via.placeholder.com/300x200" alt="Profile Photo">
+    <div class="name">ტარიელ ბეჟანიშვილი</div>
+    <div class="description">მოკლე აღწერა ჩემს შესახებ...</div>
+    </div>
+
+    <!-- Static Text Paragraph -->
+    <div class="paragraph">
+    <!--ეს არის სტატიკური ტექსტი, რომელიც მდებარეობს ჩვეულებრივ დოკუმენტის ნაკადში და არანაირი პოზიციონირება არ აქვს გამოყენებული.
+    ტექსტი ჩანს გვერდის ქვედა ნაწილში და ჩნდება პროფილის ბლოკის შემდეგ.-->
+    </div>
+</div>
+
+</body>
+</html>
