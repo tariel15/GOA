@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        h2{
+            color: rgb(74, 74, 74);
+            font-size: 20px;
+        }
+        input , button{
+            width: 260px;
+            height: 40px;
+            border: none;
+            background-color: rgba(0, 0, 0, 0.06);
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        p{
+            color: #2962ff;
+            font-size: 10px;
+
+        }
+        
+        button{
+            background-color: #2962ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <img src="image.png" alt="image" width="70px">
+        <h2>Sign in </h2>
+        <input type="email" placeholder="E-mail Address*">
+        <input type="password" placeholder="Password*">
+        <p>Forgot password?</p>
+        <button type="submit">Sign in</button>
+        <p>Don't have an account? Sign up!</p>
+    </form>
+</body>
+</html>

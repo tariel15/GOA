@@ -1,0 +1,28 @@
+<!--1) შექმენით div მიანიჭეთ ზომები, ფერი და საზღვარი. შეგიძლიათ border-radius. hover და active მდგომარეობებისას transform კუთვნილების მეშვეობით გარდაქმენით ელემენტი, გამოიყენეთ ყველა trasnform-ის თვისება: translate, rotate, scale, skew. შეეცადეთ შექმნათ ლამაზი ტრანსფორმაცია-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            transform: scale(1.5, 1.5) translate(100px , 100px) rotate(15deg) skew(20deg , 20deg); 
+        }
+        .class1:hover{
+            background-color: black;
+            transform: scale(1.2, 1.2) translate(50px, 50px) rotate(30deg) skew(10deg, 10deg);
+        }
+        .class1:active{
+            background-color: aqua;
+            transform: scale(1, 1) translate(10px, 10px) rotate(5deg) skew(5deg, 5deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="class1"></div>
+</body>
+</html>

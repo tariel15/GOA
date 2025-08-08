@@ -1,0 +1,35 @@
+<!--5) შექმენით ვებგვერდი, სადაც განთავსებულია 3 სურათი ერთ მწკრივში. თითოეულ სურათს მიეცით ჩარჩო და დაამატეთ transition. როცა მაუსს მიიტანთ სურათზე, ის ოდნავ გაიზარდოს transform: scale(1.1) და ოდნავ ზემოთ აიწიოს transform: translateY(-10px). გამოიყენეთ Flexbox ელემენტების გასასწორებლად-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: flex;
+
+        }
+        .child{
+            width:200px ;
+            height:100px ;
+            background-color: rgb(4, 78, 53);
+            border: 2px solid red;
+            transition: 2s;
+        }
+        .child:hover{
+            transform: scale(1.1);
+            transform: translateY(-10px);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

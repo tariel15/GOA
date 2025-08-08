@@ -1,0 +1,12 @@
+.contain{
+    height: 50vh;
+    color: red;
+    background-color: black;
+    border: 2px solid blue;
+    background-image: none; /*ნიშნავს ფონის ზომის ავტომატურად მორგებას*/
+    background-size: 20px;
+    background-position: 25px; /*განსაზღვრავს ფონის პოზიციას*/
+    background-attachment: fixed;
+    
+}
+/*background cover - ნიშნავს ფონის ფერის ავტომატურად მორგებას*/
