@@ -1,0 +1,57 @@
+<!--2) შექმენით keyframe რომელიც შვილ ელემენტს აბრუნებს მშობელი ელემენტის კიდეების გარშემო. შემდეგ ეს keyframe გაუწერეთ შვილ ელემენტის animation კუთვნილებას, შემდეგ მნიშვნლობებთან ერთად
+
+duration
+timing-function
+delay
+iteration count
+hover: playstate
+fill-state-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            color: #00ffff;
+            background-color: #f5f5dc;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            animation: spin-around 5s linear infinite;
+        }
+        .chiid{
+            width: 100%;
+            height: 100%;
+            color: #000000; 
+            background-color: #0000ff;
+            border-radius: 30px;
+        }
+        
+        @keyframes spin-around {
+            0%{
+                transform: rotate(0deg) translateX(120px);
+            }
+            25%{
+                transform: rotate(90deg) translateX(120px);
+            }
+            50%{
+                transform: rotate(180deg) translateX(120px) ;
+            }
+            75%{
+                transform: rotate(270deg) translateX(120px);
+            }
+            100%{
+                transform: rotate(360deg) translateX(120px)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

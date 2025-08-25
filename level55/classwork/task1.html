@@ -1,0 +1,40 @@
+<!--1) შექმენით მშობელი და შვილი div, მიანიჭეთ ორივე ელემენტს საწყისი ფერი და ზომები. შემდეგ როდესაც მოხდებამ მშობელ div-ზე hover შეცვალეთ შვილი ელემენტის სხვადასხვა თვისება: trasnform: scale, translate, rotate, skew. background-color, border-radius და თქვენთვის სასურველი კუთვნილებები. შემდეგ შვილ div-ს გაუწერეთ transition და გამოიყენეთ მისი ყველა მნიშვნელობა, ყველა თვისებას მიანიჭეთ სხვადასხვა დრო-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 300px;
+            height: 300px;
+            color: rgb(96, 12, 12);
+            display: flex;
+            justify-content: center;
+            border-radius: 40px;
+            margin: 50px auto;
+            align-items: center;
+            background-color: rgb(26, 22, 22);
+        }
+        .parent:hover .child{
+            background-color: rgb(21, 202, 63);
+            border-radius: 60px;
+            transform: scale(1.5) translate(40px , -50px) rotate(40deg) skew(20deg , 10deg);
+        }
+        .child{
+            color: rgb(12, 159, 12);
+            width: 150px;
+            height: 150px;
+            border-radius: 30px;
+            background-color: rgb(16, 102, 102);
+            transition: transform 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>

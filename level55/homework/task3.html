@@ -1,0 +1,41 @@
+<!--4) შექმენით მსგავსი ჩატვირთვის ანიმაცია:-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes animation {
+            from{width: 0%;} 
+            to{width: 75%;}
+        }
+        .parent{
+            width: 150px;
+            height: 10px;
+            border-radius: 15px;
+            border: 1px solid white;
+
+        }
+        .child{
+            background-color: white;
+            border-radius: 15px;
+            height: 10px;
+            width: 0%;
+            animation: animation 4s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child"></div>
+    </div>
+</body>
+</html>
