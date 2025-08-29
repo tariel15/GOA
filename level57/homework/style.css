@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    font-weight: 800;
+}
+
+body {
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    width: 90%;
+    max-width: 900px;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.header {
+    grid-column: 1/4;
+    height: 100px;
+    background: linear-gradient(45deg, rgb(222, 67, 222), rgba(109, 1, 187, 0.74))
+}
+
+.sidebar {
+    grid-row: 2/4;
+    background: linear-gradient(45deg, aqua, rgb(32, 180, 32))
+}
+
+.content1 {
+    grid-column: 2/4;
+    height: 200px;
+    background: linear-gradient(45deg, rgb(21, 29, 176), lightgreen);
+}
+
+.content2 {
+    grid-column: 2/3;
+    height: 150px;
+    background: linear-gradient(45deg, rgb(21, 29, 176), lightgreen);
+}
+
+.content3 {
+    grid-column: 3/4;
+    background: linear-gradient(45deg, rgb(21, 29, 176), lightgreen);
+}
+
+.footer {
+    grid-column: 1/4;
+    height: 125px;
+    background: linear-gradient(45deg, rgb(222, 67, 222), rgba(109, 1, 187, 0.74))
+}
