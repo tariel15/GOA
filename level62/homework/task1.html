@@ -1,0 +1,20 @@
+<!--2) შექმენით HTML ღილაკი <button id="btn">Click me</button> და პარაგრაფი <p id="text">Hello</p>. internal JS-ში გააკეთეთ ისე, რომ ღილაკზე დაჭერისას პარაგრაფის ტექსტი შეიცვალოს "You clicked the button"-ზე-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <p id="text">Hello</p>
+    <script>
+        const button = document.getElementById('btn');
+        const paragraph = document.getElementById('text');
+        button.addEventListener('click', function() {
+            paragraph.textContent = "You clicked the button";
+        });
+    </script>
+</body>
+</html>
