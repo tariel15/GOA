@@ -1,0 +1,31 @@
+<!--3) შექმენით ფორმა ვებგვერდზე, რომელსაც ექნება: სახელი, იმეილი, პაროლი და "დაადასტურე პაროლი" (confirm). როცა მომხმარებელი დააწვება Submit ღილაკს:
+
+შეამოწმეთ თუ რომელიმე ველი ცარიელია — თუ ცარიელია, alert-ით მოთხოვეთ სრული ინფორმაციის შეყვანა
+თუ პაროლი მოკლეა (length < 8) — alert-ით უთხარით უფრო დიდი პაროლის შეყვანა
+თუ პაროლი და confirm_password ერთმანეთს არ ემთხვევა — გაუშვით alert რომ პაროლები არ ემთხვევა
+შეამოწმეთ რომ იმეილი შეიცავდეს '@' და '.' — თუ არა, დააბრუნეთ შენიშვნა
+თუ ყველა პირობა დაკმაყოფილდა, გამოიტანეთ alert: "რეგისტრაცია წარმატებული" ან ჩაწერეთ მომხმარებლის სახელი გვერდზე-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>რეგისტრაცია</h2>
+    <form id="registrationForm">
+        <label for="name">სახელი:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">ემაილი:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">პაროლი:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="confirmPassword">დაადასტურე პაროლი:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <h3 id="successMessage"></h3>
+    <script src="task2.js"></script>
+</body>
+
+</html>

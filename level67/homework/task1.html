@@ -1,0 +1,22 @@
+<!--2) შექმენით ვემგვერდი, რომელზეც გექნებათ სახელის, ემაილისა და პაროლის შესაანი ველები, როდესაც მომხარებელი დაადასტურებს თავის მონაცემებს და დააწვება ღილაკს თქვენ შეამოწმეთ რომელიმე ველი ცარიელია თუ არა (if-ით), თუ ასეა alert-ის მეშვეობით გამოუტანეთ რომ შეიყვანოს სრული ინფორმაცია-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2>რეგისტრაციის ფორმა</h2>
+    <form id="registrationForm">
+        <label for="name">სახელი:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">ემაილი:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="password">პაროლი:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="button" onclick="validateForm()">გაგზავნა</button>
+    </form>
+    <script src="task1.js"></script>
+</body>
+
+</html>
