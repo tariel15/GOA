@@ -1,0 +1,21 @@
+<!--4) შექმენით ფუნქცია რომელსაც დაარქმევთ even_sum, ამ ფუნქციას ექნება 1 პარამეტრი სახელად border (ზღვარი), ფუნქციამ 0-იდან border-ის ჩათვლით უნდა გაიგოს ყველა რიცხვი if პირობითი განცხადების საშვალებით, ეს ყველა ლუწი რიცხვი უნდა შეკრიბოთ და დააბრუნოთ-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <label for="start">დაწყების რიცხვი:</label>
+    <input type="number" id="start" />
+    <label for="end">დასასრულის რიცხვი:</label>
+    <input type="number" id="end" />
+    <br><br>
+    <button onclick="generateArray()">გენერაცია</button>
+    <button onclick="calculateEvenSum()">გამოთვალე ლუწი რიცხვების ჯამი</button>
+    <pre id="result"></pre>
+    <pre id="evenResult"></pre>
+
+    <script src="task3.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!--1) შექმენით ვებგვერდი რომელზეც გექნებათ სარეგისტრაციო ფორმა სახელის, ემაილისა და პაროლის შესატანი ველებით, ასევე დამდასტურებელი ღილაკით. როდესაც მომხმარებელი გააგზავნის ინფორმაციას ღილაკზე დაჭერით, თქვენ ეს ინფორმაცია უნდა შეინახოთ (პირობითად) dataBase სიაში ობიექტის სახით, ესეიგი წამოღეთ ყველა HTML-ის ელემენტი javascript-ში შემდეგ ღილაკზე onclick მოვლენისას შექმენით ახალი ანგარიშის (account) ობიექტი რომელშიც მოცემუილი იქნება მომხარებლის სახელი, ემაილი და პაროლი. დამატების შემდეგ გვერდზე გაასუფთავეთ შესატანი ველები, თითოეული account ობიექტი დაამატეთ dataBase მასივში. დაამატეთ კიდევ ერთი ღილაკი ტექსტით print data რომელზე დაჭერისასაც დაიბეჭდება dataBase მასივი-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name" placeholder="enter a name">
+    <input type="email" id="email" placeholder="enter a email">
+    <input type="password" id="password" placeholder="enter a password">
+    <button onclick="registrateAcount()">Submit</button>
+    <script src="task1.js"></script>
+</body>
+</html>
