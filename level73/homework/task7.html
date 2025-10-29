@@ -1,0 +1,40 @@
+<!--8) შექმენით ვებგვერდი, რომელზეც გექნებათ 1 ღილაკი. ღილაკზე დაჭერისას უნდა შეიქმნას ახალი პარაგრაფი, რომელიც შეიცავს შემთხვევით რიცხვს 0-იდან 1000-მდე დიაპაზონში. პარაგრაფი ყოველ დაჭერაზე უნდა დაემატოს body თეგში. გამოიყენეთ createElement, textContent და appendChild მეთოდები. კომენტარებით ახსენით Math.random და Math.floor ფუნქციების დანიშნულება-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>შემთხვევითი რიცხვები</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <script src="task7.js" defer></script>
+    <button id="generateBtn">რიცხვის შექმნა</button>
+</body>
+</html>
