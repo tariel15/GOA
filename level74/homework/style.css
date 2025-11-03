@@ -1,12 +1,12 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #f3f3f3;
+    background-color: hsl(0, 0%, 94%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,79 +15,88 @@ body {
 
 .container {
     background: #fff;
-    padding: 40px;
-    border-radius: 20px;
-    width: 400px;
+    padding: 2.5rem;
+    border-radius: 1rem 1rem 10rem 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
 }
 
-.date-inputs {
+.inputs {
     display: flex;
     justify-content: space-between;
-    gap: 15px;
 }
 
-.input-box {
+.input-group {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    width: 30%;
 }
 
 label {
-    font-size: 12px;
-    color: gray;
-    letter-spacing: 1px;
-    margin-bottom: 6px;
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
 }
 
 input {
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
     padding: 10px;
-    font-size: 16px;
-    text-align: center;
-    outline: none;
-    transition: border-color 0.2s;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 input:focus {
-    border-color: #a259ff;
+    border-color: hsl(259, 100%, 65%);
+    outline: none;
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    font-size: 0.7rem;
+    height: 1rem;
+    margin-top: 3px;
 }
 
 .divider {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px 0;
-    border-top: 1px solid #eee;
     position: relative;
+    margin: 1.5rem 0;
 }
 
-button {
-    position: absolute;
-    right: 0;
-    transform: translateY(50%);
-    background: #000;
-    color: #fff;
+.divider hr {
+    border: 1px solid hsl(0, 0%, 94%);
+}
+
+#submitBtn {
+    background: hsl(259, 100%, 65%);
     border: none;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    font-size: 22px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: -30px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s;
 }
 
-button:hover {
-    background: #a259ff;
+#submitBtn:hover {
+    background: hsl(0, 0%, 8%);
 }
 
-.result {
-    font-size: 48px;
-    font-weight: 700;
+#submitBtn img {
+    width: 25px;
+    filter: brightness(0) invert(1);
+}
+
+.output h1 {
+    font-size: 3rem;
+    font-weight: 800;
     line-height: 1.2;
 }
 
-.result span {
-    color: #a259ff;
+.output span {
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
 }

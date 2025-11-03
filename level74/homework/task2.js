@@ -1,27 +1,30 @@
-document.getElementById("calculate-btn").addEventListener("click", () => {
-    const day = +document.getElementById("day").value;
-    const month = +document.getElementById("month").value;
-    const year = +document.getElementById("year").value;
-
-    if (!day || !month || !year) {
-        alert("Please enter a valid date!");
-        return;
-    }
-
-    const birthDate = new Date(year, month - 1, day);
+document.getElementById("ageForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const day = parseInt(document.getElementById("day").value);
+    const month = parseInt(document.getElementById("month").value);
+    const year = parseInt(document.getElementById("year").value);
+    const dayError = document.getElementById("dayError");
+    const monthError = document.getElementById("monthError");
+    const yearError = document.getElementById("yearError");
+    dayError.textContent = "";
+    monthError.textContent = "";
+    yearError.textContent = "";
     const today = new Date();
-
-    if (birthDate > today) {
-        alert("Date cannot be in the future!");
+    const inputDate = new Date(`${year}-${month}-${day}`);
+    if (isNaN(inputDate.getTime())) {
+        dayError.textContent = "Invalid date";
         return;
     }
-    let years = today.getFullYear() - birthDate.getFullYear();
-    let months = today.getMonth() - birthDate.getMonth();
-    let days = today.getDate() - birthDate.getDate();
+    if (inputDate > today) {
+        yearError.textContent = "Must be in the past";
+        return;
+    }
+    let years = today.getFullYear() - year;
+    let months = today.getMonth() + 1 - month;
+    let days = today.getDate() - day;
     if (days < 0) {
         months--;
-        const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
-        days += prevMonth.getDate();
+        days += new Date(today.getFullYear(), today.getMonth(), 0).getDate();
     }
     if (months < 0) {
         years--;

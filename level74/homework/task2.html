@@ -3,42 +3,45 @@
 https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="container">
-        <div class="date-inputs">
-            <div class="input-box">
-                <label for="day">DAY</label>
-                <input type="number" id="day" placeholder="DD">
+    <main class="container">
+        <form id="ageForm" class="input-section">
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="day">DAY</label>
+                    <input type="number" id="day" placeholder="DD" min="1" max="31" required>
+                    <span class="error" id="dayError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="month">MONTH</label>
+                    <input type="number" id="month" placeholder="MM" min="1" max="12" required>
+                    <span class="error" id="monthError"></span>
+                </div>
+                <div class="input-group">
+                    <label for="year">YEAR</label>
+                    <input type="number" id="year" placeholder="YYYY" required>
+                    <span class="error" id="yearError"></span>
+                </div>
             </div>
-            <div class="input-box">
-                <label for="month">MONTH</label>
-                <input type="number" id="month" placeholder="MM">
+            <div class="divider">
+                <hr>
+                <button type="submit" id="submitBtn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54655.png" alt="arrow" />
+                </button>
             </div>
-            <div class="input-box">
-                <label for="year">YEAR</label>
-                <input type="number" id="year" placeholder="YYYY">
-            </div>
-        </div>
-
-        <div class="divider">
-            <button id="calculate-btn"></button>
-        </div>
-
-        <div class="result">
-            <p><span id="years">38</span> years</p>
-            <p><span id="months">3</span> months</p>
-            <p><span id="days">26</span> days</p>
-        </div>
-    </div>
+        </form>
+        <section class="output">
+            <h1><span id="years">--</span> years</h1>
+            <h1><span id="months">--</span> months</h1>
+            <h1><span id="days">--</span> days</h1>
+        </section>
+    </main>
     <script src="task2.js"></script>
 </body>
-
 </html>
