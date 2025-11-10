@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 body {
-    background-color: #ff7f7f;
+    background-color: #fd8b8b;
     background-image: url('background-pattern.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@ body {
     flex: 1;
 }
 .banner {
-    background-color: #6b5fbc;
+    background-color: #7b6dd4;
     color: #fff;
     text-align: center;
     padding: 15px;
