@@ -1,0 +1,58 @@
+<!--1) შექმენით ფორმა, სადაც მომხმარებელი შეიყვანს სრულ სახელს, ელფოსტას და ტელეფონის ნომერს. ფორმის გაგზავნისას ეს ინფორმაცია დაემატოს ქვემოთ არსებულ  ცხრილში ახალ რიგად. გამოიყენეთ JavaScript-ში შექმნილი container და presentational ფუნქციები, რომლებსაც ექნებათ განსხვავებული დანიშნულება, container  ფუნქცია მოამზადებს მონაცემებს და შექმნის tr ელემენტს, ხოლო presentational ფუნქცია დაამატებს მას ცხრილში. კომენტარებით ახსენით თითოეული ფუნქციის როლი-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 40px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h2>მომხმარებლის მონაცემების დამატება ცხრილში</h2>
+    <form id="userForm">
+        <label>სრული სახელი: </label>
+        <input type="text" id="fullName" required>
+        <br><br>
+        <label>ელფოსტა: </label>
+        <input type="email" id="email" required>
+        <br><br>
+        <label>ტელეფონის ნომერი: </label>
+        <input type="tel" id="phone" required>
+        <br><br>
+        <button type="submit">დამატება ცხრილში</button>
+    </form>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>სრული სახელი</th>
+                <th>ელფოსტა</th>
+                <th>ტელეფონი</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="task1.js"></script>
+</body>
+</html>

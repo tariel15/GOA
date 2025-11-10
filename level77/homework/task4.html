@@ -1,0 +1,31 @@
+<!--5) შექმენით input ველი და ღილაკი “ძებნა”. გვერდზე გქონდეთ წინასწარ ჩამონათვალი (ul ელემენტში რამდენიმე li ტექსტით). როდესაც მომხმარებელი შეიყვანს სიტყვას და დააჭერს ღილაკს, მხოლოდ ის ელემენტები უნდა დარჩეს ხილული, რომლებიც შეიცავენ შეყვანილ ტექსტს, დანარჩენი უნდა დაიმალოს (display: none). გამოიყენეთ for ციკლი თითოეული li ელემენტის შესამოწმებლად და კომენტარებით ახსენით როგორ ხდება ტექსტის შედარება და ელემენტის დამალვა ან ჩვენება-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="შეიყვანე საძიებო სიტყვა">
+    <button id="searchBtn">ძებნა</button>
+    <ul id="itemList">
+        <li>ვაშლი</li>
+        <li>ბანანი</li>
+        <li>მსხალი</li>
+        <li>ატამი</li>
+        <li>საზამთრო</li>
+        <li>ფორთოხალი</li>
+    </ul>
+    <script src="task4.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--4) შექმენით ფორმა, სადაც მომხმარებელი შეიყვანს საქმეს (task). ფორმის გაგზავნისას ეს საქმე დაემატოს სიაში (ul ელემენტში) როგორც ახალი li ელემენტი, რომლის გვერდით იქნება “შესრულებულია” ღილაკი. ღილაკზე დაჭერისას კონკრეტული საქმე უნდა გადახაზოს (text-decoration: line-through). გამოიყენეთ addEventListener ღილაკისთვის და კომენტარებით ახსენით როგორ ხდება კონკრეტული li ელემენტზე წვდომა და მისი სტილის შეცვლა-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        .done {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="შეიყვანე ახალი საქმე" required>
+        <button type="submit">დამატება</button>
+    </form>
+    <ul id="taskList"></ul>
+    <script src="task3.js"></script>
+</body>
+</html>

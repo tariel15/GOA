@@ -1,0 +1,28 @@
+<!--2) შექმენით textarea მესიჯის შემოტანის ველი, დაამატეთ მასზე keydown მოვლენის მსმენელი და როდესაც მომხმარებელი რაიმე სიბოლოს შეიტანს ამ ველში მაშინვე დაუთვალეთ ახალი სიმბოლოების რაოდენობა და უჩვენეთ რამდენი აქვს 200-იანი სიმბოლოების ლიმიტიდან გამოყენებული, თუ ლიმიტს გადასცდება პარაგრაფი უნდა გაწთილდეს, სხვა შემთხვევაში უნდა იყოს მწვანე-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        textarea {
+            width: 300px;
+            height: 100px;
+            font-size: 16px;
+        }
+        p {
+            font-weight: bold;
+            color: green;
+        }
+        .over-limit {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>შეიყვანეთ ტექსტი:</h3>
+    <textarea id="message"></textarea>
+    <p id="counter">0 / 200</p>
+    <script src="task2.js"></script>
+</body>
+</html>
