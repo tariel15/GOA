@@ -1,0 +1,32 @@
+<!--7) შექმენით 2 გვერდი page1.html და page2.html page1-ზე შეიყვანეთ ტექსტი input-ში და შეინახეთ sessionStorage-ში page2-ზე გამოიტანეთ ეს ტექსტი ეკრანზე sessionStorage.getItem-ის გამოყენებით-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task6.js">
+</head>
+<body>
+    <div class="container">
+        <form id="nameForm">
+            <label for="username">შეიყვანე შენი სახელი:</label><br>
+            <input type="text" id="username" required>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="greeting"></p>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+        <hr>
+        <h2>Session Counter</h2>
+        <p id="sessionCount">0</p>
+        <button id="incrementBtn">Count +</button>
+        <button id="resetCounterBtn">Reset</button>
+        <hr>
+        <h2>გაგზავნა Page 2-ზე</h2>
+        <input type="text" id="pageInput" placeholder="შეიყვანე ტექსტი">
+        <button id="goPage2Btn">გაგზავნა Page 2-ზე</button>
+    </div>
+    <script src="task6,1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!--8) შექმენით ორი ფორმა რეგისტრაციის და შესვლის რეგისტრაციის ფორმაზე submit-ზე username და password ჩაიწეროს localStorage-ში login-ის ფორმაზე submit-ზე შეამოწმეთ ემთხვევა თუ არა localStorage-ში შენახულ მნიშვნელობებს თუ ემთხვევა დაიმალოს რეგისტრაციის ფორმა და გამოჩნდეს ტექსტი Welcome username ასევე გამოჩნდეს Logout ღილაკი Logout-ზე დაჭერისას წაიშალოს მომხმარებელი localStorage-იდან და ფორმა ისევ გამოჩნდეს-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task7.css">
+</head>
+<body>
+    <div class="container">
+        <form id="registerForm">
+            <h2>Register</h2>
+            <input type="text" id="regUsername" placeholder="Username" required><br>
+            <input type="password" id="regPassword" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <form id="loginForm">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username" required><br>
+            <input type="password" id="loginPassword" placeholder="Password" required><br>
+            <button type="submit">Login</button>
+        </form>
+        <p id="welcomeMsg" style="display:none;"></p>
+        <button id="logoutBtn" style="display:none;">Logout</button>
+    </div>
+    <script src="task7.js"></script>
+</body>
+</html>

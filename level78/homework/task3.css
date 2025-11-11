@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1faee;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #457b9d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #1d3557;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #1d3557;
+}
