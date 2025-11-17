@@ -1,0 +1,15 @@
+<!--8) შექმენით saveUser ფუნქცია ამ სინტაქსით: const saveUser = () => { ... } რომელიც input-დან აიღებს მომხმარებლის სახელს და შეინახავს localStorage-ში setItem-ით. შექმენით loadUser = () => { ... } რომელიც ამოიღებს შენახულ მნიშვნელობას და DOM-ში გამოიტანს h2-ში. კომენტარებით ახსენით რატომაა arrow function მოსახერხებელი მცირე და ერთხელ გამოსაყენებელ ფუნქციებში-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input id="username" type="text" placeholder="Enter your name">
+    <button onclick="saveUser()">Save User</button>
+    <button onclick="loadUser()">Load User</button>
+    <h2 id="display"></h2>
+    <script src="task7.js"></script>
+</body>
+</html>

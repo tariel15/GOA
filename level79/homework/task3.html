@@ -1,0 +1,28 @@
+<!--4) შექმენით getProducts ფუნქცია, რომელიც async ტიპის იქნება. await-ის გამოყენებით წამოიღეთ პროდუქტის სია https://fakestoreapi.com/products API-დან. მიღებული მასივიდან თითოეული პროდუქტი გამოიტანეთ DOM-ში ცალკე დივად: სათაური, კატეგორია და სურათი. კომენტარებით ახსენით თქვენი სიტყვებით async და await რას აკეთებს-->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            width: 250px;
+        }
+        img {
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="getProducts()">ჩატვირთე პროდუქტები</button>
+    <div class="container" id="products"></div>
+    <script src="task3.js"></script>
+</body>
+</html>
