@@ -1,0 +1,42 @@
+<!--20) შეასრულეთ frontend mentor-ის დავალება HTML, CSS, JS-ით. გვერდს უნდა ჰქონდეს როგორც ფუნქციონალი ისე გამართული რესპონსიული დიზაინი, გამოიყენეთ API: https://api.github.com/users/${username}
+
+https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>GitHub User Search</h1>
+
+    <form id="searchForm">
+        <input type="text" id="username" placeholder="Enter GitHub username" required>
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="userCard" class="user-card hidden">
+        <img id="avatar" src="" alt="User Avatar">
+        <h2 id="name"></h2>
+        <p id="login"></p>
+        <p id="bio"></p>
+        <ul class="stats">
+            <li>Repos: <span id="repos"></span></li>
+            <li>Followers: <span id="followers"></span></li>
+            <li>Following: <span id="following"></span></li>
+        </ul>
+        <p id="location"></p>
+        <p id="blog"></p>
+        <p id="twitter"></p>
+    </div>
+
+    <p id="errorMsg" class="error hidden"></p>
+</div>
+
+<script src="task19.js"></script>
+</body>
+</html>
