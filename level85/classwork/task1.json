@@ -1,0 +1,10 @@
+[
+    {
+        "name": "acc1",
+        "balance": 1000
+    },
+    {
+        "name": "acc2",
+        "balance": 2000
+    }
+]
