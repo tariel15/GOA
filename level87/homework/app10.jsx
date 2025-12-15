@@ -1,8 +1,8 @@
 //12) App.jsx-ში გამოიძახეთ კომპონენტები  იმპორტი გაუკეთეთ Header, Card, Info, Footer  დააბრუნეთ ისინი JSX-ში თანმიმდევრობით  გამოიყენეთ Fragment <> </>
-import Header from "./components/Header";
-import Card from "./components/Card";
-import Info from "./components/Info";
-import Footer from "./components/Footer";
+import Header from "./Header";
+import Card from "./Card";
+import Info from "./Info";
+import Footer from "./Footer";
 
 function App() {
     return (

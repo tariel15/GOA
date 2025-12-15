@@ -13,10 +13,4 @@ function ImagesBlock() {
         </div>
     );
 }
-export default function App() {
-    return (
-        <div>
-            <ImagesBlock />
-        </div>
-    );
-}
+export default ImagesBlock
