@@ -12,7 +12,7 @@
 #•    ინახავს სტატისტიკას tuple-ში: (თამაშების რაოდენობა, მოგებების რაოდენობა, საშუალო მცდელობები)
 import random
 
-# სტატისტიკა
+#    სტატისტიკა
 games_played = 0
 wins = 0
 total_attempts = 0
@@ -60,10 +60,10 @@ while True:
     if again != "y":
         break
 
-# საშუალო მცდელობების გამოთვლა
+#     საშუალო მცდელობების გამოთვლა
 average_attempts = total_attempts / games_played if games_played > 0 else 0
 
-# სტატისტიკის შენახვა tuple-ში
+#     სტატისტიკის შენახვა tuple-ში
 stats = (games_played, wins, round(average_attempts, 2))
 
 print("\nთამაშის სტატისტიკა")

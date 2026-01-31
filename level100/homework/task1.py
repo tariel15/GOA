@@ -43,7 +43,6 @@ else:
     with open("processed.txt", "w", encoding="utf-8") as file:
         file.write(swapped_text)
 
-    # კონსოლში შედეგების გამოტანა
     print("სიტყვების რაოდენობა:", len(words_from_file))
     print("თანხმოვანი ასოების რაოდენობა:", consonants_count)
     print("ყველაზე მოკლე სიტყვა:", shortest_word)
