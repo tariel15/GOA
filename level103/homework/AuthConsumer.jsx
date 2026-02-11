@@ -1,0 +1,16 @@
+
+import { useContext } from "react";
+import AuthContext from "./AuthContext";
+
+function AuthConsumer() {
+    const { email, password } = useContext(AuthContext);
+
+    return (
+        <div style={{ border: "1px solid black", margin: "10px", padding: "10px" }}>
+            <h3>Email: {email}</h3>
+            <h4>Password: {password}</h4>
+        </div>
+    );
+}
+
+export default AuthConsumer;
